@@ -51,7 +51,7 @@ module Api
             private
 
             def airline_params
-                params.require(airline).permit(:name, :image_url)
+                params.require(:airline).permit(:name, :image_url)
             end
 
             def options
